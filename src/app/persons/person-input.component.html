@@ -1,0 +1,13 @@
+<!-- Using Local References Example -->
+<!--
+<label for="name">Name</label>
+<input type="text" id="name" #personNameEl>
+<button (click)="onCreatePersonLocalReference(personNameEl.value)">Create</button>
+-->
+
+<label for="name">Name</label>
+<!-- Two-way binding Example uses [(Model)] = "variableName" nested parenthesis in square brackets -->
+<input type="text" id="name" [(ngModel)]="enteredPersonName">
+
+<!-- Event binding uses (EVENT) normal parenthesis -->
+<button (click)="onCreatePerson()">Create</button>

@@ -1,0 +1,6 @@
+<p *ngIf="isFetching">Fetching Data...</p>
+<ul *ngIf="!isFetching">
+    <!-- ngFor is courtesy of the BrowserModule from Angular -->
+    <!-- String interoplate a variable using {{ NAME }} double curly braces -->
+    <li *ngFor="let person of personList" (click)="onRemovePerson(person)">{{ person }}</li>
+</ul>
